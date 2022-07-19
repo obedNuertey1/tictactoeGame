@@ -152,4 +152,8 @@ table {
     #body{
         padding-bottom: 1200px;
     }
+    
+    #scoreBoard{
+        padding-bottom: 200px;
+    }
 }
