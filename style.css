@@ -149,13 +149,13 @@ table {
     #r3c2 {
         margin-left: 10px;
     }
-
-    
-    #scoreBoard{
-        padding-bottom: 200px;
+    #body {
+        padding-bottom: 1200px;
     }
-    
-         ::-webkit-scrollbar {
+    #scoreBoard {
+        padding-bottom: 5px;
+    }
+     ::-webkit-scrollbar {
         width: 10px;
     }
      ::-webkit-scrollbar-thumb {
@@ -163,5 +163,8 @@ table {
     }
      ::-webkit-scrollbar-thumb:hover {
         background: #555;
+    }
+    #body {
+        height: 1200px;
     }
 }
