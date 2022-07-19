@@ -67,7 +67,7 @@ function changeBackground() {
             `background: url(/images/bg/${ticTacToeDict['background'][Math.floor(Math.random() * ticTacToeDict['background'].length)]}.png);
 		width: ${(screen.width)}px;
 		height: ${(screen.height)}px;
-		position: fixed;`);
+		position: relative;`);
         document.querySelector('.container-1').style.color = 'white';
     } else {
         newBackground.setAttribute('style',
