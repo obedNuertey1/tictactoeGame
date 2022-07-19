@@ -1,0 +1,152 @@
+.gridCard {
+    background-image: url("images/grid.png");
+    height: 10px;
+}
+
+.card {
+    width: 75%;
+    margin-left: 2%;
+}
+
+.row img:hover {
+    background: 0px 0px 0px rgba(249, 125, 9, 0.8);
+}
+
+.scoreBoard {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.scoreTable {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.scoreTable tr,
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.scoreTable td {
+    text-align: center;
+}
+
+.date {
+    padding-left: 75px;
+}
+
+#junkImage:hover {
+    background: rgba(249, 125, 9, 0.3);
+    border-radius: 10px;
+    /*width: 100px;*/
+}
+
+#r1r1 {
+    align-items: center;
+    justify-content: space-around;
+}
+
+table {
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.container-1 {
+    margin-top: 10px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#r1c2 img {
+    margin-left: 10px;
+}
+
+#r1c3 img {
+    margin-left: 20px;
+}
+
+#r2c2 img {
+    margin-left: 10px;
+}
+
+#r2c3 img {
+    margin-left: 20px;
+}
+
+#r3c1 img {
+    margin-top: 10px;
+}
+
+#r3c2 img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#r3c3 img {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.gitHubLink a {
+    box-shadow: 4px -5px 40px rgba(2, 190, 59, 0.3);
+}
+
+.gitHubLink a:hover {
+    background-color: rgba(249, 125, 9, 0.696);
+    box-shadow: 4px -5px 40px rgba(249, 125, 9, 0.3);
+    border: rgba(249, 125, 9, 0.3);
+}
+
+#card1 {
+    width: 375px;
+    height: 375px;
+    margin-top: 100px;
+}
+
+#card1,
+.card2 {
+    background: rgba(255, 254, 254, 0.3);
+}
+
+#changeBackground {
+    box-shadow: 4px -5px 30px rgb(64, 128, 255);
+}
+
+#changeBackground:hover {
+    background-color: rgba(249, 125, 9, 0.696);
+    box-shadow: 4px -5px 30px rgba(249, 125, 9, 0.3);
+    border: rgba(249, 125, 9, 0.3);
+}
+
+@media(max-width:700px) {
+    #r1c1,
+    #r1c2,
+    #r1c3,
+    #r2c1,
+    #r2c2,
+    #r2c3,
+    #r3c1,
+    #r3c2,
+    #r3c3 {
+        width: 30%;
+    }
+    #r1c3,
+    #r2c3,
+    #r3c3 {
+        margin-left: 20px;
+    }
+    #r1c2,
+    #r2c2,
+    #r3c2 {
+        margin-left: 10px;
+    }
+}

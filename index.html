@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body onload="changeBackground()">
+    <!----------------- Navbar --------------------->
+    <nav class="navbar navbar-expand-xl bg-dark" style="z-index: 1; width:100%; margin-bottom:50px; position:fixed; top: 0px;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" style="display: flex; margin: 0 auto; align-items: center; justify-content: space-around;" href="index.html">Tic Tac Toe Game</a>
+        </div>
+    </nav>
+    <!---------------------Grid------------------->
+    <div class="container-1" style="position:relative; top:50px; margin-top: 20px">
+        <h1>Let's Play</h1>
+        <h2>Tic Tac Toe</h2>
+    </div>
+    <div class="container my-10 card1">
+        <div class="row">
+            <div class="col-xl-4"></div>
+            <div class="col-xl-4">
+                <!------------------------- Creating the grid on a card ------------------------>
+                <div class="card shadow" id="card1">
+                    <div class="card-body gridCard" style="position:relative; top:0; left:0;">
+                        <!----------------- The First Row --------------------->
+                        <div class="container">
+                            <div class="row" id="row-1">
+                                <div class="col-xl-4" id="r1c1" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                                <div class="col-xl-4" id="r1c2" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                                <div class="col-xl-4" id="r1c3" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------ End of ther First row ------------------->
+
+                        <!---------------------- The Second Row ------------------->
+                        <div class="container mt-5">
+                            <div class="row" id="row-2">
+                                <div class="col-xl-4" id="r2c1" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                                <div class="col-xl-4" id="r2c2" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                                <div class="col-xl-4" id="r2c3" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------------------- End of the Second Row ---------------------->
+
+                        <!--------------------- The Third Row -------------------->
+                        <div class="container mt-5">
+                            <div class="row" id="row-3">
+                                <div class="col-xl-4" id="r3c1" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                                <div class="col-xl-4" id="r3c2" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                                <div class="col-xl-4" id="r3c3" onclick="ticTacToeMain(this)">
+                                    <img id="junkImage" src="/images/transparent_character.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-----------------------End of the Third Row ------------------>
+                    </div>
+                    <!------------------- End of Creating the Grid -------------------->
+                    <div class="barImages" id="barImages">
+                        <!-- All Of row 1 -->
+                        <!--<img src="images/hori_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:50px; left:1px; height:20px; width:370px;" alt="">-->
+                        <!-- All of row 2 -->
+                        <!--<img src="images/hori_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:175px; height:20px; left:1px; width:370px;" alt="">-->
+                        <!-- All of row 3 -->
+                        <!--<img src="images/hori_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; left:1px; top:310px; height:20px; width:370px;" alt="">-->
+                        <!-- All of column 1 -->
+                        <!--<img src="images/verti_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:1px; left: 50px; width: 20px; height:369px;" alt="">-->
+                        <!-- All of column 2 -->
+                        <!--<img src="images/verti_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:1px; left: 175px; width: 20px; height:369px;" alt="">-->
+                        <!-- All of column 3 -->
+                        <!--<img src="images/verti_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:1px; left: 300px; width: 20px; height:369px;" alt="">-->
+                        <!-- Right diagonal -->
+                        <!--<img src="images/right_diag_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:0px; left: 15px; height:0 auto; width:0 auto;" alt="">-->
+                        <!-- Left diagonal -->
+                        <!--<img src="images/left-diag_Strike.png" style="background: 0px 0px 0px rgba(0, 0, 0, 0); position: absolute; top:0px; left: 0px; height:0 auto; width:0 auto;" alt="">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------- The Score Board --------------------->
+        <div class="row" style="margin-top: 20px; margin-bottom: 400px">
+            <div class="col-xl-4"></div>
+            <div class="col-xl-4">
+                <div class="card shadow card2" style="width:375px">
+                    <div class="card-header bg-dark text-white">
+                        <div class="scoreBoard"></div>
+                        <h2>Score Board</h2>
+                        <h3><span id="gameOutcome">Lets Play</span></h3>
+                        <div class="gitHubLink">
+                            <a class="btn btn-lg btn-success" href="#">Get Code</a>
+                            <button class="btn btn-primary" id="changeBackground" onclick="changeBackground()">Change background</button>
+                        </div>
+                    </div>
+                    <div class="card-body scoreTable">
+                        <!------------------------ The Score table ---------------->
+                        <table>
+                            <tr>
+                                <th>wins</th>
+                                <th>loses</th>
+                                <th>draws</th>
+                            </tr>
+
+                            <tr>
+                                <td><span id="wins"><strong>0</strong></span></td>
+                                <td><span id="loses"><strong>0</strong></span></td>
+                                <td><span id="draws"><strong>0</strong></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------- End Of the Score Board ------------------->
+    </div>
+
+    <!-------------------- Background Music ------------------>
+    <audio loop autoplay>
+			<source src="/audio/song1.mp3" type="audio/mp3">
+		</audio>
+
+    <script src="home.js
+	"></script>
+</body>
+
+</html>
