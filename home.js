@@ -62,14 +62,14 @@ const LOSSsound = new Audio('/audio/aww.mp3');
 //This function changes the background when it is called
 function changeBackground() {
     let newBackground = document.querySelector('body');
-    /*if (screen.width <= 700) { //performing media query
+    if (screen.width <= 700) { //performing media query
         newBackground.setAttribute('style',
             `background: url(/images/bg/${ticTacToeDict['background'][Math.floor(Math.random() * ticTacToeDict['background'].length)]}.png);
 		width: ${(screen.width)}px;
 		height: ${(screen.height)}px;
 		position: relative;`);
         document.querySelector('.container-1').style.color = 'white';
-    } else {*/
+    } else {
         newBackground.setAttribute('style',
             `background: url(/images/bg/${ticTacToeDict['background'][Math.floor(Math.random() * ticTacToeDict['background'].length)]}.png);
 		background-size: cover;
