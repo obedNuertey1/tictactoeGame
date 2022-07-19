@@ -11,7 +11,7 @@
     <title>Tic Tac Toe</title>
 </head>
 
-<body id="body" onload="changeBackground()" style="height:">
+<body onload="changeBackground()" id="body">
     <!----------------- Navbar --------------------->
     <nav class="navbar navbar-expand-xl bg-dark" style="z-index: 1; width:100%; margin-bottom:50px; position:fixed; top: 0px;">
         <div class="container-fluid">
@@ -19,12 +19,11 @@
         </div>
     </nav>
     <!---------------------Grid------------------->
-<div class="container">
-	    <div class="container-1" style="position:relative; top:50px; margin-top: 20px">
+    <div class="container container-1" style="position:relative; top:50px; margin-top: 10px">
         <h1>Let's Play</h1>
         <h2>Tic Tac Toe</h2>
     </div>
-    <div class="container my-10 card1">
+    <div class="container my-5 card1">
         <div class="row">
             <div class="col-xl-4"></div>
             <div class="col-xl-4">
@@ -100,7 +99,10 @@
                     </div>
                 </div>
             </div>
+            <div class="col-xl-4">
+            </div>
         </div>
+
         <!---------------------- The Score Board --------------------->
         <div class="row" id="scoreBoard" style="margin-top: 20px; margin-bottom: 400px;">
             <div class="col-xl-4"></div>
@@ -111,7 +113,7 @@
                         <h2>Score Board</h2>
                         <h3><span id="gameOutcome">Lets Play</span></h3>
                         <div class="gitHubLink">
-                            <a class="btn btn-lg btn-success" href="https://github.com/obedNuertey1/tictactoeGame.git">Get Code</a>
+                            <a class="btn btn-lg btn-success" href="#">Get Code</a>
                             <button class="btn btn-primary" id="changeBackground" onclick="changeBackground()">Change background</button>
                         </div>
                     </div>
@@ -138,13 +140,9 @@
     </div>
 
     <!-------------------- Background Music ------------------>
-        <div class="container mt-10" style="margin-top:200px">
-            <audio loop autoplay controls>
+    <audio loop autoplay>
 					<source src="/audio/song1.mp3" type="audio/mp3">
 				</audio>
-        </div>
-
-	<div>
 
     <script src="home.js
 	"></script>
