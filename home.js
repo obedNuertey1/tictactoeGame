@@ -60,6 +60,7 @@ const WINsound = new Audio('/audio/cash.mp3');
 const LOSSsound = new Audio('/audio/aww.mp3');
 
 //This function changes the background when it is called
+/*
 function changeBackground() {
     let newBackground = document.querySelector('body');
     if (screen.width <= 700) { //performing media query
@@ -84,7 +85,7 @@ function changeBackground() {
         document.querySelector('.container-1').style.color = 'white';
     }
 }
-
+*/
 //The Main function where everything takes place
 function ticTacToeMain(box) {
     let currentBox = box.id;
